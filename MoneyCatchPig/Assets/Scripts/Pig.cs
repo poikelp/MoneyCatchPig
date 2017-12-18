@@ -14,6 +14,8 @@ public class Pig : MonoBehaviour {
 	Transform trans;
 	SpriteRenderer rend;
 	Vector3 pos;
+	GameObject stage;
+	float flowSpeed;
 
 	// Use this for initialization
 	void Start () {
@@ -22,6 +24,8 @@ public class Pig : MonoBehaviour {
 		trans = transform;
 		rend = GetComponent<SpriteRenderer> ();
 		pos = trans.position;
+		stage = GameObject.Find ("stage");
+		flowSpeed = stage.GetComponent<FlowStage> ().speed;
 	}
 	
 	// Update is called once per frame
@@ -47,6 +51,10 @@ public class Pig : MonoBehaviour {
 
 	void OnCollisionEnter2D (){
 		jumpCount = 0;
-
+	}
+	void OnCollisionStay2D (){
+		pos = trans.position;
+		pos.x -= flowSpeed * Time.deltaTime;
+		trans.position = pos;
 	}
 }
