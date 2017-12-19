@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212626399888102494}
   - component: {fileID: 61989349968089606}
   - component: {fileID: 50274795767788046}
-  - component: {fileID: 114864041400979430}
+  - component: {fileID: 114425438884856022}
   m_Layer: 0
   m_Name: tonkachi
   m_TagString: ene
@@ -88,7 +88,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
---- !u!114 &114864041400979430
+--- !u!114 &114425438884856022
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1935236367076686}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b1267cff1965684d973ea830c499d00, type: 3}
+  m_Script: {fileID: 11500000, guid: f8d515205ca3d485e8f2bfcd8c3a83b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &212626399888102494
@@ -133,7 +133,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 99f335f5de7feff40ae562797b7990ea, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ddd476a8b9833455c9d6c60d8755d112, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

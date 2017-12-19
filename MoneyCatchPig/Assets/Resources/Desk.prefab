@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4956047420365808}
   - component: {fileID: 212263994294828614}
   - component: {fileID: 61775318083521386}
-  - component: {fileID: 114878665318980636}
+  - component: {fileID: 114936240749931586}
   m_Layer: 0
   m_Name: Desk
   m_TagString: stage
@@ -36,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1882322165617502}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.77, y: -3.29, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -67,7 +67,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6, y: 1}
   m_EdgeRadius: 0
---- !u!114 &114878665318980636
+--- !u!114 &114936240749931586
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -75,7 +75,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1882322165617502}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e5009166a2a92d458820904b43099f6, type: 3}
+  m_Script: {fileID: 11500000, guid: 72abb464b925e434d8cf098adaea25e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &212263994294828614
@@ -112,7 +112,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1f41da011c3922448917a231cc0612a4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eaea144c0613e4f748b9f07915abc937, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

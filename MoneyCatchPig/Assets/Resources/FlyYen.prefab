@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4438918221135956}
   - component: {fileID: 212391020779902176}
   - component: {fileID: 61079235181688892}
-  - component: {fileID: 114042117025731560}
+  - component: {fileID: 114372652387722994}
   m_Layer: 0
   m_Name: FlyYen
   m_TagString: money
@@ -67,7 +67,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
---- !u!114 &114042117025731560
+--- !u!114 &114372652387722994
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -75,10 +75,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1200643214737164}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58b1e437174543747b313dc5846f1454, type: 3}
+  m_Script: {fileID: 11500000, guid: 3fda6bd9c40c9485586f8cb89db61504, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  way: 1
+  way: 0
   speed: 3
 --- !u!212 &212391020779902176
 SpriteRenderer:
@@ -114,7 +114,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a6d1de6e6eeda1e418346894bb91f296, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e2775a764e33647f0a168594289891e9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

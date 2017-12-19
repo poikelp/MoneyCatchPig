@@ -15,9 +15,6 @@ public class GameOver : MonoBehaviour {
 		sco = GameObject.Find ("Text").GetComponent<Score> ();
 		rend = GetComponent<SpriteRenderer> ();
 		gameObject.SetActive (false);
-	}
-
-	void Awake () {
 		if (sco.score < 500000) {
 			rend.sprite = spri [0];
 		} else {
@@ -25,6 +22,7 @@ public class GameOver : MonoBehaviour {
 			transform.localScale = new Vector3 (4.7f, 5.3f, 0.0f);
 		}
 	}
+
 	
 	// Update is called once per frame
 	void Update () {
