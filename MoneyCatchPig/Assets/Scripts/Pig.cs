@@ -5,6 +5,8 @@ using UnityEngine;
 public class Pig : MonoBehaviour {
 
 	[SerializeField]
+	GameObject go;
+	[SerializeField]
 	float speed;
 	[SerializeField]
 	float jumpPow;
@@ -44,6 +46,10 @@ public class Pig : MonoBehaviour {
 		}
 		float hori = Input.GetAxis ("Horizontal") * Time.deltaTime * speed;
 		pos.x += hori;
+		if (pos.x > 8)
+			pos.x = -8;
+		else if (pos.x < -8)
+			pos.x = 8;
 		trans.position = pos;
 
 		if(hori != 0)
@@ -64,6 +70,14 @@ public class Pig : MonoBehaviour {
 		pos = trans.position;
 		pos.x -= flowSpeed * Time.deltaTime;
 		trans.position = pos;
+	}
+
+	void OnTriggerEnter2D (Collider2D col) {
+		if(col.CompareTag("ene")){
+			go.SetActive(true);
+			Destroy (stage);
+			Destroy (this.gameObject);
+		}
 	}
 
 	public void ChangeColor () {
