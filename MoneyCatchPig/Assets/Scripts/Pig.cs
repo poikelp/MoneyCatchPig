@@ -16,6 +16,10 @@ public class Pig : MonoBehaviour {
 	Vector3 pos;
 	GameObject stage;
 	float flowSpeed;
+	Score sco;
+	[SerializeField]
+	Sprite[] pigColor;
+	int nowColor = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -26,6 +30,9 @@ public class Pig : MonoBehaviour {
 		pos = trans.position;
 		stage = GameObject.Find ("stage");
 		flowSpeed = stage.GetComponent<FlowStage> ().speed;
+		sco = GameObject.Find ("Text").GetComponent<Score> ();
+
+
 	}
 	
 	// Update is called once per frame
@@ -46,6 +53,7 @@ public class Pig : MonoBehaviour {
 			pos.y = 6.0f;
 			trans.position = pos;
 			rigi.velocity = Vector3.zero;
+			sco.score -= 50000;
 		}
 	}
 
@@ -56,6 +64,11 @@ public class Pig : MonoBehaviour {
 		pos = trans.position;
 		pos.x -= flowSpeed * Time.deltaTime;
 		trans.position = pos;
+	}
+
+	public void ChangeColor () {
+		nowColor++;
+		rend.sprite = pigColor [nowColor];
 	}
 
 
