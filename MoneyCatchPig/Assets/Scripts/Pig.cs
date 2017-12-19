@@ -57,4 +57,6 @@ public class Pig : MonoBehaviour {
 		pos.x -= flowSpeed * Time.deltaTime;
 		trans.position = pos;
 	}
+
+
 }

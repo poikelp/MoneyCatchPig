@@ -21,5 +21,6 @@ public class FlowStage : MonoBehaviour {
 	void Update () {
 		trans.position = pos;
 		pos -= del * Time.deltaTime;
+		del *= 1.0001f;
 	}
 }
